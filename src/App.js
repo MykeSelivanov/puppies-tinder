@@ -1,6 +1,14 @@
 import './App.css';
+import AboutPage from './pages/AboutPage';
 import Header from './components/Header';
-import HeroText from './components/HeroText';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  useHistory,
+  useParams
+} from 'react-router-dom';
 
 
 // 3 pages About, Discover, Search => /about, ...
@@ -9,10 +17,15 @@ import HeroText from './components/HeroText';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <HeroText/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+      </div>
+      <Switch>
+        <Route exact path="/" component={AboutPage} />
+        <Route exact path="/about" component={AboutPage} />
+      </Switch>
+    </Router>
   );
 }
 
