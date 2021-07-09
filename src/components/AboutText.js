@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from './Container'
 
 export default function AboutText() {
     return (
-        <div className="AboutText">
+        <div className="AboutText text-center">
             <h3 className="AboutHeading" style={{ "margin-top": "2%" }}>Welcome to Puppies-Tinder!</h3>
             <p className="AboutTextContent1">It's like Tinder, but with Dogs!</p>
             <p className="AboutTextContent2">The sad eyes searching for the loving heart, for a friend and companion;
@@ -22,5 +23,13 @@ export default function AboutText() {
              That’s what we want you to know about us.
             </p>
         </div>
+        // <Container>
+        //     <div className="row">
+        //         <div className="col md-12 p-4 text-center">
+        //             Lorem ipsum dolor sit amet
+        //         </div>
+
+        //     </div>
+        // </Container>
     )
 }

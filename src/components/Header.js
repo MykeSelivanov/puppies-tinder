@@ -1,30 +1,60 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
         <div className="Header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><Link to="/">Puppies-Tinder</Link></a>
+                    <Link class="navbar-brand" to="/">Puppies-Tinder</Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="/about"><Link to="/about">About</Link></a>
+                               <Link class="nav-link" to="/about">About</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/discover"><Link to="/discover">Discover</Link></a>
+                                <Link class="nav-link" to="/discover">Discover</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/search"><Link to="/search">Search</Link></a>
+                               <Link class="nav-link" to="/search">Search</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        // <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        //     <div class="container-fluid">
+        //         <a class="navbar-brand" href="#">Navbar</a>
+        //         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        //             <span class="navbar-toggler-icon"></span>
+        //         </button>
+        //         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        //             <ul class="navbar-nav">
+        //                 <li class="nav-item">
+        //                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+        //                 </li>
+        //                 <li class="nav-item">
+        //                     <a class="nav-link" href="#">Features</a>
+        //                 </li>
+        //                 <li class="nav-item">
+        //                     <a class="nav-link" href="#">Pricing</a>
+        //                 </li>
+        //                 <li class="nav-item dropdown">
+        //                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        //                         Dropdown link
+        //   </a>
+        //                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        //                         <li><a class="dropdown-item" href="#">Action</a></li>
+        //                         <li><a class="dropdown-item" href="#">Another action</a></li>
+        //                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+        //                     </ul>
+        //                 </li>
+        //             </ul>
+        //         </div>
+        //     </div>
+        // </nav>
     )
 }

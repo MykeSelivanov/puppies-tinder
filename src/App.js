@@ -18,9 +18,7 @@ import {
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
-      </div>
+      <Header />
       <Switch>
         <Route exact path="/" component={AboutPage} />
         <Route exact path="/about" component={AboutPage} />
