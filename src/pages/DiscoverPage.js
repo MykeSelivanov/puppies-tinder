@@ -21,7 +21,7 @@ export default function DiscoverPage() {
 
     useEffect(() => {
         getRndDog();
-    }, [matchCount])
+    }, [])
 
     const handleBtnClick = (btnType) => {
         setMatch(false);
@@ -30,7 +30,7 @@ export default function DiscoverPage() {
                 setMatch(true);
                 setMatchCount(++matchCount);
             }
-        } 
+        }
         getRndDog();
     }
 
@@ -38,9 +38,9 @@ export default function DiscoverPage() {
         <Container style={{ textAlign: "center" }}>
             <h2>Make Some Friends</h2>
             <h3>Thumbs up for the puppies you like!</h3>
-            <ImageComponent displayCard={displayCard} imageSource={image} handleBtnClick={handleBtnClick} />
+            <ImageComponent displayCard={displayCard} imageSrc={image} handleBtnClick={handleBtnClick} />
             <h1>{matchCount} puppies liked you back so far!</h1>
-            <div style={{ opacity: match ? 1 : 0}} className="alert alert-success" role="alert">Yay! Someone liked you back!</div>
+            <div style={{ opacity: match ? 1 : 0 }} className="alert alert-success" role="alert">Yay! Someone liked you back!</div>
         </Container>
     )
 }
