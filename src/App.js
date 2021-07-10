@@ -1,6 +1,4 @@
 import './App.css';
-import AboutPage from './pages/AboutPage';
-import Header from './components/Header';
 import {
   BrowserRouter as Router,
   Route,
@@ -9,6 +7,10 @@ import {
   useHistory,
   useParams
 } from 'react-router-dom';
+import AboutPage from './pages/AboutPage';
+import Header from './components/Header';
+import DiscoverPage from './pages/DiscoverPage';
+
 
 
 // 3 pages About, Discover, Search => /about, ...
@@ -22,6 +24,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={AboutPage} />
         <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/discover" component={DiscoverPage}/>
       </Switch>
     </Router>
   );
