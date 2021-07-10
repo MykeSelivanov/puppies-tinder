@@ -5,7 +5,7 @@ export default function AboutText() {
     return (
         <Container>
             <div className="AboutText text-center">
-                <h3 className="AboutHeading" style={{ "margin-top": "2%" }}>Welcome to Puppies-Tinder!</h3>
+                <h3 className="AboutHeading" style={{ marginTop: "2%" }}>Welcome to Puppies-Tinder!</h3>
                 <p className="AboutTextContent1">It's like Tinder, but with Dogs!</p>
                 <p className="AboutTextContent2">The sad eyes searching for the loving heart, for a friend and companion;
                 the sad stories and a struggle for life… We say: “No, no more sadness” with a dog adoption app Puppies-Tinder
