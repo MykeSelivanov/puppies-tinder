@@ -4,11 +4,11 @@ import Container from '../components/Container'
 
 export default function AboutPage() {
     return (
-        <Container fluid>
-        <div className="AboutPage">
+        <Container>
+
             <HeroText />
             <AboutText />
-        </div>
+
         </Container>
     )
 }
